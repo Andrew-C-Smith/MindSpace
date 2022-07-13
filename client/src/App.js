@@ -1,3 +1,14 @@
+const mysql = require('mysql');
+
+const con =mysql.createconnection({
+  host: "eu-cdbr-west-03.cleardb.net",
+  user: "b977d8651d7064",
+  password: "0fbc6962",
+  database: "heroku_5931df2ca701b94" 
+});
+
+
+
 import './App.css';
 import './components/NavBar/navBar.css'
 import './containers/journalLogin.css'
@@ -24,7 +35,7 @@ import { AudioService } from "./services/Services";
 import AudioList from '../src/components/audio_player_components/AudioList';
 import AudioControls from "../src/components/audio_player_components/AudioControls";
 import Modal from 'react-modal';
-import closeModalButton from '../src/static/cross-free-icon-font.svg'
+import closeModalButton from '../src/static/cross-free-icon-font.svg
 
 
 function App() {
